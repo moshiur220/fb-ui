@@ -13,9 +13,9 @@ void main() {
       // initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => LoginPage(),
+        '/': (context) => const LoginPage(),
         // When navigating to the "/second" route, build the SecondScreen widget.
-        '/home': (context) => HomePage(),
+        '/home': (context) => const HomePage(),
       },
       theme: ThemeData(
         // Define the default brightness and colors.

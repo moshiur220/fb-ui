@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+// import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({Key? key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
+              const Text(
                 "facebook",
                 style:
                     TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
@@ -36,13 +37,13 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(50)),
                         child: IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.search,
                               color: Colors.black,
                               size: 25,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 15,
                       ),
                       Container(
@@ -53,7 +54,7 @@ class _HomePageState extends State<HomePage> {
                             borderRadius: BorderRadius.circular(50)),
                         child: IconButton(
                             onPressed: () {},
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.message_outlined,
                               color: Colors.black,
                               size: 25,
@@ -70,15 +71,15 @@ class _HomePageState extends State<HomePage> {
             unselectedLabelColor: Colors.black54,
             indicatorColor: Colors.blue,
             tabs: [
-              Tab(
+              const Tab(
                 icon: Icon(Icons.home),
               ),
               Tab(
                 child: Row(
                   children: [
-                    Icon(Icons.video_collection_outlined),
+                    const Icon(Icons.video_collection_outlined),
                     Container(
-                      child: Center(
+                      child: const Center(
                           child: Text(
                         '9',
                         style: TextStyle(
@@ -86,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                       )),
                       height: 20,
                       width: 20,
-                      margin: EdgeInsets.only(bottom: 20),
+                      margin: const EdgeInsets.only(bottom: 20),
                       decoration: BoxDecoration(
                           color: Colors.red,
                           borderRadius: BorderRadius.circular(50)),
@@ -95,11 +96,11 @@ class _HomePageState extends State<HomePage> {
                 ),
                 //
               ),
-              Tab(icon: Icon(Icons.home_outlined)),
+              const Tab(icon: Icon(Icons.home_outlined)),
             ],
           ),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: [
             Icon(Icons.directions_car),
             Icon(Icons.directions_transit),
