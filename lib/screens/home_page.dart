@@ -12,9 +12,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 6,
       child: Scaffold(
         appBar: AppBar(
+          elevation: 1,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           title: Row(
@@ -70,6 +71,7 @@ class _HomePageState extends State<HomePage> {
             labelColor: Colors.blue,
             unselectedLabelColor: Colors.black54,
             indicatorColor: Colors.blue,
+            isScrollable: true,
             tabs: [
               const Tab(
                 icon: Icon(Icons.home),
@@ -97,6 +99,9 @@ class _HomePageState extends State<HomePage> {
                 //
               ),
               const Tab(icon: Icon(Icons.home_outlined)),
+              const Tab(icon: Icon(Icons.map_outlined)),
+              const Tab(icon: Icon(Icons.notifications_active_outlined)),
+              const Tab(icon: Icon(Icons.menu_outlined)),
             ],
           ),
         ),
@@ -104,6 +109,9 @@ class _HomePageState extends State<HomePage> {
           children: [
             Icon(Icons.directions_car),
             Icon(Icons.directions_transit),
+            Icon(Icons.directions_bike),
+            Icon(Icons.directions_bike),
+            Icon(Icons.directions_bike),
             Icon(Icons.directions_bike),
           ],
         ),
