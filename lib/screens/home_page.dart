@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_chat_app/screens/post_page.dart';
 // import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomePage extends StatefulWidget {
@@ -107,7 +108,7 @@ class _HomePageState extends State<HomePage> {
         ),
         body: const TabBarView(
           children: [
-            Icon(Icons.directions_car),
+            PostPage(),
             Icon(Icons.directions_transit),
             Icon(Icons.directions_bike),
             Icon(Icons.directions_bike),
