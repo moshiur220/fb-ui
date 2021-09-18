@@ -40,14 +40,81 @@ class _PostPageState extends State<PostPage> {
                     child: TextField(
                       decoration: InputDecoration(
                           contentPadding: const EdgeInsets.all(10.0),
-                          hintText: "What\'s on your maind",
+                          hintText: "What\'s on your mainds",
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
                           )),
                     ),
-                  ))
+                  )),
                 ],
               )),
+          const Divider(
+            color: Colors.black12,
+            height: 0,
+            thickness: 1.5,
+            endIndent: 0,
+          ),
+          Container(
+            color: Colors.white,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                TextButton.icon(
+                  onPressed: () {
+                    // print("click");
+                  },
+                  icon: const Icon(
+                    Icons.video_library,
+                    color: Colors.red,
+                  ),
+                  label: const Text(
+                    "Live",
+                    style: TextStyle(color: Colors.black54),
+                  ),
+                ),
+                const VerticalDivider(
+                  color: Colors.red,
+                  thickness: 1,
+                  indent: 20,
+                  endIndent: 0,
+                  width: 20,
+                ),
+                TextButton.icon(
+                  onPressed: () {
+                    // print("click");
+                  },
+                  icon: const Icon(
+                    Icons.photo_album_sharp,
+                    color: Colors.blue,
+                  ),
+                  label: const Text(
+                    "Photo",
+                    style: TextStyle(color: Colors.black54),
+                  ),
+                ),
+                const VerticalDivider(
+                  color: Colors.red,
+                  thickness: 1,
+                  indent: 20,
+                  endIndent: 0,
+                  width: 20,
+                ),
+                TextButton.icon(
+                  onPressed: () {
+                    // print("click");
+                  },
+                  icon: const Icon(
+                    Icons.video_call_sharp,
+                    color: Colors.red,
+                  ),
+                  label: const Text(
+                    "Room",
+                    style: TextStyle(color: Colors.black54),
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
     );
